@@ -2,7 +2,7 @@
 # Implementation Plan
 
 ### Core
-[ ] **1. Create base HTML structure**  
+[x] **1. Create base HTML structure**  
 - **Validation:** Verify header, button, counter, and input container exist in DOM  
 - *Depends on: Nothing*
 

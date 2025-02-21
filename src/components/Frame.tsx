@@ -137,10 +137,48 @@ export default function Frame() {
       }}
     >
       <div className="w-[300px] mx-auto py-2 px-2">
-        <h1 className="text-2xl font-bold text-center mb-4 text-gray-700 dark:text-gray-300">
-          {PROJECT_TITLE}
-        </h1>
-        <ExampleCard />
+        {/* Header */}
+        <header className="text-center mb-6">
+          <h1 className="text-2xl font-bold text-gray-700 dark:text-gray-300">
+            {PROJECT_TITLE}
+          </h1>
+          <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+            Click the peanut to feed it!
+          </p>
+        </header>
+
+        {/* Counter Display */}
+        <div className="text-center mb-4">
+          <span className="text-3xl font-bold text-purple-600 dark:text-purple-400">
+            0
+          </span>
+          <span className="text-gray-600 dark:text-gray-400 ml-2">peanuts fed</span>
+        </div>
+
+        {/* Peanut Button */}
+        <div className="flex justify-center mb-6">
+          <button 
+            className="w-[72px] h-[72px] rounded-full bg-amber-200 hover:bg-amber-300 
+                       transition-all duration-200 transform hover:scale-105 active:scale-95
+                       flex items-center justify-center shadow-lg"
+            aria-label="Feed peanut"
+          >
+            🥜
+          </button>
+        </div>
+
+        {/* Input Container */}
+        <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-md">
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+            Your FID
+          </label>
+          <input 
+            type="number"
+            className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 
+                     rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
+            placeholder="Enter your FID"
+          />
+        </div>
       </div>
     </div>
   );
